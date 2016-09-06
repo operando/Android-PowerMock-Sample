@@ -1,0 +1,1 @@
+# Android-PowerMock-Sample
