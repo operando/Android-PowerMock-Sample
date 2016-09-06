@@ -19,4 +19,18 @@ public class StringUtilTest {
         Mockito.when(StringUtil.isEmpty("")).thenReturn(false);
         Assert.assertFalse(StringUtil.isEmpty(""));
     }
+
+    @Test
+    public void isEmptyFinalMethodTest() {
+        PowerMockito.mockStatic(StringUtil.class);
+        Mockito.when(StringUtil.isEmptyFinal("")).thenReturn(false);
+        Assert.assertFalse(StringUtil.isEmptyFinal(""));
+    }
+
+    @Test
+    public void isEmptyNativeMethodTest() {
+        PowerMockito.mockStatic(StringUtil.class);
+        Mockito.when(StringUtil.isEmptyNative("")).thenReturn(false);
+        Assert.assertFalse(StringUtil.isEmptyNative(""));
+    }
 }

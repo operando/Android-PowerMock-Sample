@@ -8,4 +8,10 @@ public final class StringUtil {
     public static boolean isEmpty(String s) {
         return s == null || s.isEmpty();
     }
+
+    public static final boolean isEmptyFinal(String s) {
+        return s == null || s.isEmpty();
+    }
+
+    public static final native boolean isEmptyNative(String string);
 }
