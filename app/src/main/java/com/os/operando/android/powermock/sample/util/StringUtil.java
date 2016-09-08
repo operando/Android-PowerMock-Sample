@@ -14,4 +14,12 @@ public final class StringUtil {
     }
 
     public static final native boolean isEmptyNative(String string);
+
+    public static boolean isEmptyPrivateCall(String s) {
+        return isEmptyPrivate(s);
+    }
+
+    private static boolean isEmptyPrivate(String s) {
+        return s == null || s.isEmpty();
+    }
 }
